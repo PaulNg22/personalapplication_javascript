@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Paul's Personal JavaScript Application</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+   <div class="weathercard">
+       <div class="search">
+           <input type="text" placeholder="Your Favorite City" class="search-bar">
+           <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+       </div>
+       <div class="weather loading">
+            <div class="intro">
+                <h2 id="city">Weather in Sydney</h2>
+                <br>
+                <div id="time">Sunday, November 14, 2021 13:28:57</div>
+                <br>
+            </div>
+            <div class=info>
+                <div id="weather">
+                    <div id="temp">25°C</div>
+                    <br>
+                    <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="" id="icon"/>
+                    <br>
+                    <div id="description">Few clouds - fresh breeze</div>
+                    <br>
+                    <div id="humidity">Humidity:60%</div>
+                    <br>
+                 </div>
+                <div class="image">
+                    <img src="https://source.unsplash.com/1600x900/?sydney" alt="" id="cityImage"/>
+                </div>
+            </div>
+            <hr>
+            <div class="taskcard">
+                <h2 id="city">To-Do-List</h2>
+                <br>
+                <div id=taskfield>
+                    <form id="taskForm" action="#" method="post">
+                        <input type="text" id="task-bar" name="new-task-description" placeholder="Your Task" onclick="loadNewForm()" >
+                        <br>
+                        <input type="submit" class="task-button" value="Create New Task">
+                    </form>
+                  
+                    <div id="list">
+                        <ul id="tasks">
+                        </ul>
+                    </div>
+
+                </div>
+   
+            </div>
+            
+        </div>         
+    </div>
+
+    </div>
+</body>
+</html>
